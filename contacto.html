@@ -38,9 +38,12 @@
       <div>
         <p class="overline">Formulario</p>
         <h2 style="margin:0 0 22px">Solicitar cotización o perfil</h2>
-        <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html">
-          <input type="hidden" name="form-name" value="contacto">
-          <p style="display:none"><label>No llenar <input name="bot-field"></label></p>
+        <form name="contacto" method="POST" action="https://formsubmit.co/proyectos@tarnex.com.pe">
+          <input type="hidden" name="_next" value="https://tarnex.com.pe/gracias.html">
+          <input type="hidden" name="_subject" value="Cotización TARNEX — sitio web">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <div class="form-grid">
             <div>
               <label for="nombre">Nombre</label>
