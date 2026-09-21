@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | TARNEX</title>
+  <meta name="description" content="Cotice un teleférico rural RÍO CABLE o un perfil de proyecto turístico. TARNEX, San Isidro, Lima. proyectos@tarnex.com.pe · +51 1 751 6067.">
+  <meta name="theme-color" content="#07141B">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="nav is-solid" id="nav">
+    <a class="nav__logo" href="index.html"><img src="images/logo-white.svg" alt="TARNEX"></a>
+    <nav class="nav__links" id="menu">
+      <a href="sistemas.html">Sistemas</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="empresa.html">Empresa</a>
+      <a class="btn btn--teal" href="contacto.html">Contacto</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="breadcrumb"><a href="index.html">Inicio</a> · Contacto</p>
+      <p class="kicker">Proyectos</p>
+      <h1>Cuéntenos el vano, el río o el mirador.</h1>
+      <p class="hero-sub">Municipalidades, gobiernos regionales y comunidades. Un interlocutor técnico para el cruce o el perfil.</p>
+    </div>
+  </section>
+
+  <main class="section section--white">
+    <div class="wrap grid-2">
+      <div>
+        <p class="overline">Formulario</p>
+        <h2 style="margin:0 0 22px">Solicitar cotización o perfil</h2>
+        <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html">
+          <input type="hidden" name="form-name" value="contacto">
+          <p style="display:none"><label>No llenar <input name="bot-field"></label></p>
+          <div class="form-grid">
+            <div>
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" required autocomplete="name">
+            </div>
+            <div>
+              <label for="entidad">Entidad / empresa</label>
+              <input id="entidad" name="entidad" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form-grid">
+            <div>
+              <label for="email">Correo</label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+            <div>
+              <label for="telefono">Teléfono</label>
+              <input id="telefono" name="telefono" type="tel" autocomplete="tel">
+            </div>
+          </div>
+          <div>
+            <label for="tipo">Tipo de consulta</label>
+            <select id="tipo" name="tipo">
+              <option>Teleférico rural RÍO CABLE</option>
+              <option>Perfil de proyecto turístico</option>
+              <option>Tracción manual / pedal</option>
+              <option>Energía solar</option>
+              <option>Red eléctrica</option>
+              <option>Sistema &gt; 200 m</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div>
+            <label for="mensaje">Ubicación, luz aproximada y necesidad</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Ej. cruce de río, 80 m, 6 personas, sin red eléctrica…"></textarea>
+          </div>
+          <p style="margin-top:22px"><button class="btn btn--dark" type="submit">Enviar mensaje</button></p>
+        </form>
+      </div>
+      <aside>
+        <article class="card" style="margin-bottom:16px">
+          <p class="card__code">Oficina</p>
+          <h3>San Isidro</h3>
+          <p>Calle Las Garzas Norte 431<br>Urb. Limatambo<br>San Isidro — Lima, Perú</p>
+        </article>
+        <article class="card" style="margin-bottom:16px">
+          <p class="card__code">Correo</p>
+          <h3><a href="mailto:proyectos@tarnex.com.pe">proyectos@tarnex.com.pe</a></h3>
+        </article>
+        <article class="card" style="margin-bottom:16px">
+          <p class="card__code">Teléfono</p>
+          <h3>+51 1 751 6067</h3>
+          <p>+51 1 751 6058</p>
+        </article>
+        <article class="card">
+          <p class="card__code">RUC</p>
+          <h3>20605639225</h3>
+          <p>TARNEX Parqueos Eficientes S.A.C.</p>
+        </article>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <img src="images/logo-white.svg" alt="TARNEX" style="height:40px;width:auto;margin-bottom:16px">
+          <p>TARNEX Parqueos Eficientes S.A.C.</p>
+        </div>
+        <div>
+          <h4>Sistemas</h4>
+          <a href="sistemas.html">RÍO CABLE</a>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <a href="empresa.html">Quiénes somos</a>
+          <a href="proyectos.html">Proyectos</a>
+        </div>
+        <div>
+          <h4>Lima</h4>
+          <p>Calle Las Garzas Norte 431, San Isidro</p>
+        </div>
+      </div>
+      <div class="footer__copy">
+        <span>© <span data-year></span> TARNEX S.A.C.</span>
+        <span>RÍO CABLE</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
